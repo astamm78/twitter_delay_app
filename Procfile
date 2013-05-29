@@ -1,3 +1,2 @@
 web: bundle exec rackup config.ru -p $PORT
-
-worker: bundle exec sidekiq ...
+worker: bundle exec sidekiq -r./config/environment.rb -c1
